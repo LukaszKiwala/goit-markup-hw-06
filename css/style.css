@@ -12,6 +12,7 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --overlay-background-color: rgba(33 150 243 / 0.9);
   --modal-background-color: rgba(0 0 0 / 0.1);
+  --greyrgba: rgba(255 255 255 / 0.6);
 }
 
 body {
@@ -393,8 +394,8 @@ header {
   gap: 30px;
 }
 
-.social-icons-product-designer { 
-  gap:10px;
+.social-icons-product-designer {
+  gap: 10px;
 
   display: flex;
   justify-content: center;
@@ -408,7 +409,7 @@ header {
 }
 
 .social-icons-frontend-developer {
-  gap:10px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,7 +419,7 @@ header {
   will-change: background-color, fill;
 }
 .social-icons-marketing {
-  gap:10px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,7 +429,7 @@ header {
   will-change: background-color, fill;
 }
 .social-icons-ui-designer {
-  gap:10px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,6 +649,67 @@ header {
 }
 .footer-icon:hover {
   background-color: var(--hover-color);
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 108px;
+}
+
+.footer-input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  background-color: rgba(0 0 0 / 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--greyrgba);
+}
+
+.footer-form {
+  display: flex;
+}
+.text-mb-20 {
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--greyrgba);
+}
+
+.button-newsletter {
+  padding-left: 42px;
+  padding-right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--hover-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-newsletter {
+  fill: var(--color-white);
 }
 
 .button-page-1 {
