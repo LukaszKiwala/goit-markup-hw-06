@@ -241,7 +241,7 @@ header {
   height: 100%;
   background-color: var(--modal-background-color);
   transition: transform var(--transition-duration);
-   z-index: 10;
+  z-index: 10;
 }
 
 .is-hidden {
@@ -257,7 +257,6 @@ header {
   border-radius: 4px;
   position: relative;
   text-align: left;
-  
 }
 
 .close-btn {
@@ -321,6 +320,7 @@ header {
   border-radius: 4px;
   transition: border var(--transition-duration) var(--cubic-bezier);
   will-change: border;
+  outline: none;
 }
 
 .modal-input:focus,
@@ -339,7 +339,7 @@ header {
   border: 1px solid var(--modal-input-border-color);
   border-radius: 4px;
   resize: none;
-  outline: transparent;
+  outline: none;
   transition: border var(--transition-duration) var(--cubic-bezier);
   will-change: border;
 }
