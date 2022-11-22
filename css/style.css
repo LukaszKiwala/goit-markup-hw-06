@@ -241,6 +241,7 @@ header {
   height: 100%;
   background-color: var(--modal-background-color);
   transition: transform var(--transition-duration);
+   z-index: 10;
 }
 
 .is-hidden {
@@ -256,6 +257,7 @@ header {
   border-radius: 4px;
   position: relative;
   text-align: left;
+  
 }
 
 .close-btn {
@@ -317,7 +319,6 @@ header {
   height: 40px;
   border: 1px solid var(--modal-input-border-color);
   border-radius: 4px;
-  outline: transparent;
   transition: border var(--transition-duration) var(--cubic-bezier);
   will-change: border;
 }
@@ -399,7 +400,7 @@ header {
   color: var(--hover-color);
 }
 
-.checkbox-svg  {
+.checkbox-svg {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -408,10 +409,9 @@ header {
 }
 
 .checked-icon {
-
   background-color: var(--hover-color);
-  fill:#fff;
- 
+  fill: #fff;
+
   border-radius: 2px;
 }
 .statement {
