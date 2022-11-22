@@ -24,7 +24,9 @@ body {
 
   background-color: var(--color-white);
 }
-
+input {
+  outline:none;
+}
 ul {
   list-style: none;
   padding: 0;
